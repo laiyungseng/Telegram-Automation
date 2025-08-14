@@ -16,7 +16,7 @@ This project is designed to automate the process of scraping the latest news fro
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.11+
 - crawl4ai
 - selenium
 - beautifulsoup4 (bs4)
@@ -62,3 +62,4 @@ Make sure you have the appropriate WebDriver (e.g., ChromeDriver) for Selenium i
 - [Selenium](https://www.selenium.dev/)
 - [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
 - [python-telegram-bot](https://python-telegram-bot.org/)
+
