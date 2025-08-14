@@ -1,0 +1,37 @@
+[project]
+name = "lmcrawler"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "crawl4ai>=0.6.3",
+    "fastmcp>=2.8.1",
+    "ipykernel>=6.29.5",
+    "langchain-community>=0.3.25",
+    "langchain-mcp-adapters>=0.1.7",
+    "langchain-ollama>=0.3.3",
+    "langgraph>=0.4.8",
+    "mcp[cli]>=1.9.2",
+    "ollama>=0.5.1",
+    "pandas>=2.3.0",
+    "plotly>=6.1.2",
+    "praisonai[crewai]>=2.2.33",
+    "praisonaiagents[mcp]",
+    "pydantic>=2.10.1",
+    "pynput>=1.8.1",
+    "pytest-playwright>=0.7.0",
+    "python-telegram-bot>=22.2",
+    "schedule>=1.2.2",
+    "selenium>=4.33.0",
+    "smolagents[litellm]>=1.17.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "praisonaiagents",
+]
+
+[tool.uv.sources]
+praisonaiagents = { workspace = true }
