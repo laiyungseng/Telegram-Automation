@@ -11,14 +11,14 @@ import schedule
 import _osx_support
 
 
-TOKEN = '8044745626:AAGP51-OyjmxpXeCjjhBoV6N1bUWpZKBLkU'
+TOKEN = ''
 getTGURL = f'https://api.telegram.org/bot{TOKEN}/getUpdates'
 contain_info = ""
 
 #requestGET = requests.get(getTGURL)
 #print(requestGET.status_code)
 #msg_info = requestGET.json()
-chatid = 1692512416 #msg_info.get("result",{})[0].get('message').get('chat',{})['id'] = 1692512416
+chatid =  #msg_info.get("result",{})[0].get('message').get('chat',{})['id'] = 1692512416
 #print(chatid)
 
 def read_pendingupload():
@@ -92,4 +92,5 @@ schedule.every().day.at("08:00").do(main)
 
 while True:
     schedule.run_pending()
+
     time.sleep(1)
